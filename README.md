@@ -1,4 +1,4 @@
-# Diploma-project-module-for-rational-nutrition-support
+# Diploma project "Module for rational nutrition support"
 
 Big request: don't look at the quality of the code, I know that in some places it leaves much to be desired! This project was very quickly remade from a very old one :)
 
