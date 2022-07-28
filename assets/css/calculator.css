@@ -1,0 +1,201 @@
+.calculator {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.calc-container {
+    padding: 30px 64px;
+    background: #eefdf0;
+    border-radius: 32px;
+    width: 100%;
+}
+
+.calc-container__row {
+    margin-bottom: 24px;
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #474C56;
+}
+
+.labels {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__label {
+    margin-bottom: 6px;
+}
+
+.b-radio {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.b-radio_native {
+    display: none;
+}
+
+.b-radio_circle {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #dce0e7;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.b-radio_text {
+    color: #8E97A9;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.b-radio_native:checked + .b-radio_circle:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #50C648;
+}
+
+.b-radio_native:checked ~ .b-radio_text {
+    color: #474c56;
+}
+
+.b-radio_native:checked + .b-radio_circle {
+    border-color: #50C648;
+}
+
+.form__row {
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 24px;
+}
+
+.form__col {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 0 10px;
+}
+
+.b-input-custom, .b-select-custom {
+    padding: 0 16px;
+    height: 56px;
+}
+
+.b-input-custom, .b-textarea-custom, .b-select-custom {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #DCE0E7;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #8E97A9;
+}
+
+.b-select-custom {
+    padding-right: 48px;
+    background-image: url(../../images/select-arr.svg);
+    background-position: center right 15px;
+    background-repeat: no-repeat;
+}
+
+.b-select-custom {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.calc-row__btn-wrap {
+    margin-top: 32px;
+    text-align: right;
+    width: 50%;
+}
+
+.b-btn {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 16px 50px;
+    border-radius: 100px;
+    border: 1px solid #d30009;
+    position: relative;
+    z-index: 2;
+}
+
+.b-btn_green-filled {
+    background: #50C648;
+    border-color: #50C648;
+    color: #fff;
+    transition: .25s background-color;
+    margin: 0 auto;
+}
+
+.b-btn_green-filled:hover {
+    background: #5fe855;
+    border-color: #5fe855;
+}
+
+.b-btn_green-filled:focus {
+    outline: none;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.b-calc_result-text {
+    color: #50C648;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.b-radio_check {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid rgb(80, 80, 80);
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.b-radio_native:checked + .b-radio_check:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5.5px;
+    margin-left: -5.3px;
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #50C648;
+}
+
+.b-radio_native:checked + .b-radio_check {
+    border-color: #50C648;
+}
